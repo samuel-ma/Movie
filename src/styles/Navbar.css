@@ -1,0 +1,47 @@
+
+
+:root{
+    --grey: #373844;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 120px;
+    background-color: #060716;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: smaller;
+}
+
+.navicons1,
+.navicons2,
+.navicons3,
+.navicons{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    gap: 7px;
+    color: var(--blue);
+}
+
+.navicons:hover,
+.navicons1:hover,
+.navicons2:hover,
+.navicons3:hover{
+    cursor: pointer;
+    color: var(--white);
+    background-color: rgba(179, 179, 179, 0.034);
+}
+
+.navt1,
+.navt2,
+.navt3,
+.navt{
+    font-size: 14px;
+}

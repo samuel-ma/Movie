@@ -1,0 +1,22 @@
+
+
+:root{
+  --bg: #10141F;
+  --black: #0B0C0F;
+  --white: #575B63;
+}
+
+body{
+  font-family: "Inter";
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #161722;
+  color: #E6DBBB;
+}
+
+.App{
+  display: flex;
+  align-items: flex-start;
+}
