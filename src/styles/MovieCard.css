@@ -1,0 +1,35 @@
+
+
+.card{
+    background-color: #383a5075;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 260px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: smaller;
+    line-height: 20px;
+}
+
+.poster{
+    border-radius: 8px;
+    width: 260px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.title{
+    font-size: 20px;
+    margin: 8px;
+    font-weight: bold;
+}
+
+.descr{
+    margin: 8px;
+    color: grey;
+}
+
+.rating{
+    margin: 8px;
+}
