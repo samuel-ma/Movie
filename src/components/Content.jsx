@@ -1,10 +1,11 @@
-import React from 'react'
 import "../styles/Content.css"
+import MovieList from './MovieList'
 
 function Content() {
+  
   return (
     <form className='content'>
-      Content
+      <MovieList/>
     </form>
   )
 }
