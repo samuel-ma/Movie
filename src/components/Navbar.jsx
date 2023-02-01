@@ -9,7 +9,7 @@ function Navbar() {
 
       <div className='nav'>
         <div className='topnav'>
-          EyeFlix
+          Hive
         </div>
         
         <div className='midnav'>
