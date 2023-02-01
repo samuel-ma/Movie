@@ -28,8 +28,20 @@ const MovieList = () => {
   }
 
   const movies2 = {
-      title: "Brave And Wild",
-      rating: 4.5,
+      title: "Black Adam",
+      rating: 4.2,
+      description: "This is the desscription of the above movie whatever it might be"
+  }
+
+  const movies3 = {
+      title: "Glass Onion",
+      rating: 4.8,
+      description: "This is the desscription of the above movie whatever it might be"
+  }
+
+  const movies4 = {
+      title: "Devotion",
+      rating: 3.5,
       description: "This is the desscription of the above movie whatever it might be"
   }
 
@@ -37,8 +49,8 @@ const MovieList = () => {
     <div className="list">
         <MovieCard title={movies.title} posterURL={p1} rating={movies.rating} description={movies.description} />
         <MovieCard title={movies2.title} posterURL={p2} rating={movies2.rating} description={movies2.description} />
-        <MovieCard title={movies.title} posterURL={p3} rating={movies.rating} description={movies.description} />
-        <MovieCard title={movies2.title} posterURL={p4} rating={movies2.rating} description={movies2.description} />
+        <MovieCard title={movies3.title} posterURL={p3} rating={movies3.rating} description={movies3.description} />
+        <MovieCard title={movies4.title} posterURL={p4} rating={movies4.rating} description={movies4.description} />
         <MovieCard title={movies.title} posterURL={p5} rating={movies.rating} description={movies.description} />
         <MovieCard title={movies2.title} posterURL={p6} rating={movies2.rating} description={movies2.description} />
         <MovieCard title={movies.title} posterURL={p7} rating={movies.rating} description={movies.description} />
