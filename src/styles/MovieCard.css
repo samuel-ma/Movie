@@ -1,7 +1,7 @@
 
 
 .card{
-    background-color: #383a5075;
+    background-color: #829ed81e;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -28,6 +28,21 @@
 .descr{
     margin: 8px;
     color: grey;
+}
+
+.rate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: smaller;
+    width: 40px;
+    height: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--blue);
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
 .rating{

@@ -1,4 +1,5 @@
 import "../styles/MovieCard.css"
+import { BsStarFill } from "react-icons/bs";
 
 const MovieCard = ({title, description, posterURL, rating}) => {
   return (
@@ -6,7 +7,10 @@ const MovieCard = ({title, description, posterURL, rating}) => {
         <img className="poster" src={posterURL} alt="image" />
         <h1 className="title">{title}</h1>
         <p className="descr">{description}</p>
-        <p className="rating">{rating}</p>
+        <div className="rate">
+          <p className="rating">{rating}</p>
+          <BsStarFill/>
+        </div>
     </div>
   )
 }
