@@ -10,7 +10,7 @@
     bottom: 0;
     top: 0;
     width: 120px;
-    background-color: #060716;
+    background-color: transparent;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -19,15 +19,42 @@
     font-size: smaller;
 }
 
+.nav{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #383a5075;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.midnav{
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .navicons1,
 .navicons2,
 .navicons3,
 .navicons{
     display: flex;
     align-items: center;
-    font-size: 24px;
-    gap: 7px;
-    color: var(--blue);
+    font-size: 25px;
+    color: var(--white);
+    border-radius: 30px;
+    background-color: rgba(179, 179, 179, 0.034);
+    padding: 10px;
 }
 
 .navicons:hover,
@@ -35,7 +62,7 @@
 .navicons2:hover,
 .navicons3:hover{
     cursor: pointer;
-    color: var(--white);
+    color: var(--blue);
     background-color: rgba(179, 179, 179, 0.034);
 }
 
