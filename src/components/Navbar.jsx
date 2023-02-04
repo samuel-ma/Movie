@@ -16,22 +16,22 @@ function Navbar() {
         <div className='midnav'>
           <div className='navicons'>
             <p id="home-anchor-element"><RiHome6Fill /></p>
-            <Tooltip anchorId="home-anchor-element" content="Home" place="top" />
+            <Tooltip anchorId="home-anchor-element" content="Home" place="right" />
           </div>
 
           <div className='navicons'>
             <p id="movies-anchor-element"><RiMovie2Fill /></p>
-            <Tooltip anchorId="movies-anchor-element" content="Movies" place="top" />
+            <Tooltip anchorId="movies-anchor-element" content="Movies" place="right" />
           </div>
 
           <div className='navicons'>
             <p id="mac-anchor-element"><RiMacFill /></p>
-            <Tooltip anchorId="mac-anchor-element" content="Mac" place="top" />
+            <Tooltip anchorId="mac-anchor-element" content="Mac" place="right" />
           </div>
 
           <div className='navicons'>
             <p id="clock-anchor-element"><AiFillClockCircle /></p>
-            <Tooltip anchorId="clock-anchor-element" content="Clock" place="top" />
+            <Tooltip anchorId="clock-anchor-element" content="Clock" place="right" />
           </div>
 
         </div>
