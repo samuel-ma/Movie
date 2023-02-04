@@ -1,22 +1,42 @@
+:root {
+  --bg: #10141f;
+  --black: #0b0c0f;
+  --white: #575b63;
+  --rt-color-white: #fff;
+  --rt-color-dark: #262737;
+  --rt-color-success: #8dc572;
+  --rt-color-error: #be6464;
+  --rt-color-warning: #f0ad4e;
+  --rt-color-info: #337ab7;
+  --rt-opacity: 0.9;
 
-
-:root{
-  --bg: #10141F;
-  --black: #0B0C0F;
-  --white: #575B63;
+  --rt-border-tooltip-color: rgba(255, 255, 255, .5);
 }
 
-body{
+body {
   font-family: "Poppins";
   line-height: 30px;
   margin: 0;
   padding: 0;
   width: 100%;
   background-color: #161722;
-  color: #E6DBBB;
+  color: #e6dbbb;
 }
 
-.App{
+.App {
   display: flex;
   align-items: flex-start;
+}
+
+.react-tooltip {
+  left: 4.16667px;
+  top: 57.5px;
+  font-size: 16px;
+  padding: 6px 25px;
+  border: 1px solid var(--rt-border-tooltip-color);
+}
+
+.react-tooltip-arrow {
+  border-bottom: 1px solid var(--rt-border-tooltip-color);
+  border-right: 1px solid var(--rt-border-tooltip-color);
 }
