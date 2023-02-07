@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 .filt{
@@ -10,3 +11,17 @@
     align-items: center;
     justify-content: center;
 }
+=======
+
+
+.filt{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+>>>>>>> 8238654ae67ec2b82bdeed7b2151adf0334a77c8
