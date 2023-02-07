@@ -1,0 +1,12 @@
+
+
+.filt{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
