@@ -59,6 +59,7 @@
 }
 
 .filter{
+    cursor: pointer;
     height: fit-content;
     font-size: 22px;
     border: 1px solid var(--blue);
