@@ -26,12 +26,12 @@ function Navbar() {
 
           <div className='navicons'>
             <p id="mac-anchor-element"><RiMacFill /></p>
-            <Tooltip anchorId="mac-anchor-element" content="Mac" place="right" />
+            <Tooltip anchorId="mac-anchor-element" content="Television" place="right" />
           </div>
 
           <div className='navicons'>
             <p id="clock-anchor-element"><AiFillClockCircle /></p>
-            <Tooltip anchorId="clock-anchor-element" content="Clock" place="right" />
+            <Tooltip anchorId="clock-anchor-element" content="Saved" place="right" />
           </div>
 
         </div>

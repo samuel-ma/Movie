@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 
 
 :root{
-    --blue: #427BFF;
+    --blue: #427bff;
     --white: #F8F9FA;
 }
 
@@ -76,83 +75,4 @@
 .filter:hover{
     color: white;
     background-color: var(--blue);
-=======
-
-
-:root{
-    --blue: #427BFF;
-    --white: #F8F9FA;
-}
-
-.sc{
-    padding-left: 160px;
-    padding-right: 20px;
-    width: 100%;
-}
-
-.search{
-    width: 100%;
-    height: fit-content;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border-bottom: 1px solid #427bff63;
-    position: fixed;
-    right: 0;
-    top: 0;
-    background-color: #383a5075;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(100px);
-    -webkit-backdrop-filter: blur(5px);
-    z-index: 1;
-}
-
-.input{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--blue);
-}
-
-.place{
-    flex: 9.5;
-    border: none;
-    height: inherit;
-    background-color: transparent;
-    outline: none;
-    padding-left: 10px;
-    font-family: 'Inter';
-    color: var(--white);
-    font-size: 13px;
-}
-
-.sicon{
-    flex: 0.5;
-    background-color: var(--blue);
-    border: none;
-    color: white;
-    padding: 10px;
-    font-size: 15px;
-}
-
-.filter{
-    cursor: pointer;
-    height: fit-content;
-    font-size: 22px;
-    border: 1px solid var(--blue);
-    border-radius: 5px;
-    color: var(--blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    padding: 8px;
-}
-
-.filter:hover{
-    color: white;
-    background-color: var(--blue);
->>>>>>> 8238654ae67ec2b82bdeed7b2151adf0334a77c8
 }
