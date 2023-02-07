@@ -1,7 +1,27 @@
-import React from 'react'
+
+
+import {useState, useEffect} from 'react'
 import "../styles/Search.css"
-import { FaSearch, FaTags } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import Content from './Content';
+import Filter from './Filter';
+
+const [pop, setPop] = useState([]);
+const [filtered, setFiltered] = useState([]);
+const [active, setActive] = useState(0);
+
+useEffect(() => {
+  fetchPopular();
+}, [])
+
+const fetchPopular = async() => {
+  const data = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=a3985284ae4c1570e3b3123fced85f63&language=en-US&page=1")
+  const movies = await data.json()
+  setPop(movies.results)
+  setFiltered(movies.results)
+  console.log(pop);
+  console.log(filtered);
+}
 
 function Search() {
   return (
@@ -14,7 +34,7 @@ function Search() {
               </button>
           </div>
           <button className='filter'>
-              <FaTags />
+            <Filter popular={popular} setFiltered={setFiltered} active={active} setActive={setActive}/>
           </button>
       </div>
 
