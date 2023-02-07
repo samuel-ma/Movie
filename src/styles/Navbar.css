@@ -66,6 +66,7 @@
     border-radius: 30px;
     background-color: rgba(179, 179, 179, 0.034);
     padding: 10px;
+    height: 28px;
 }
 
 .navicons:hover,
