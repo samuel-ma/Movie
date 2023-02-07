@@ -13,13 +13,8 @@
   --rt-border-tooltip-color: rgba(255, 255, 255, .5);
 }
 
-<<<<<<< HEAD
 body{
   font-family: "Inter";
-=======
-body {
-  font-family: "Poppins";
->>>>>>> b9dc9c5f68f3a1ce8bc869fd4f592f3ba9e4e58e
   line-height: 30px;
   margin: 0;
   padding: 0;
