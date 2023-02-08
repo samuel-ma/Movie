@@ -61,12 +61,14 @@
 .navicons{
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 25px;
     color: var(--white);
     border-radius: 30px;
     background-color: rgba(179, 179, 179, 0.034);
     padding: 10px;
     height: 28px;
+    width: 28px;
 }
 
 .navicons:hover,

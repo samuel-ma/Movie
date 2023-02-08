@@ -37,6 +37,10 @@
     border: 1px solid var(--blue);
 }
 
+.input::placeholder{
+    font-family: "Inter";
+}
+
 .place{
     flex: 9.5;
     border: none;
