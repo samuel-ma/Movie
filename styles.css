@@ -2,7 +2,7 @@
 
 .lottie{
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 0;
+    bottom: 0;
     cursor: pointer;
 }
