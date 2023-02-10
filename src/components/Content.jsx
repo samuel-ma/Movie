@@ -1,11 +1,13 @@
 import "../styles/Content.css"
 import MovieList from './MovieList'
+import Add from "../components/Add"
 
 function Content() {
   
   return (
     <form className='content'>
-      <MovieList/>
+      {/* <MovieList/> */}
+      <Add/>
     </form>
   )
 }
