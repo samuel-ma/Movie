@@ -1,14 +1,17 @@
 
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function Movies() {
+  let navigate = useNavigate();
+
+  function handleClick(){
+    return navigate("/television")
+  }
+
   return (
     <div>
-      <Link to="home">Home page</Link>
-      <Link to="saved">Saved page</Link>
-      <Link to="television">Television page</Link>
-      <Link to="movies">Movies page</Link>
-      <h1>Saved</h1>
+      <h1>Movies</h1>
+      <button onClick={handleClick}>Television page</button>
     </div>
   )
 }
