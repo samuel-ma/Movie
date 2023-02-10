@@ -6,7 +6,7 @@ function Content() {
   
   return (
     <form className='content'>
-      {/* <MovieList/> */}
+      <MovieList/>
       <Add/>
     </form>
   )

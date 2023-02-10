@@ -1,23 +1,14 @@
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import "../styles/Add.css"
 import Modal from "react-overlays/Modal";
-import Lottie from "lottie-web";
 import loty from "../assets/lottie.json"
+import Lottie from "lottie-react";
+import { RxCross2 } from "react-icons/rx";
+import { IoImagesOutline } from "react-icons/io5";
+
 
 export default function App() {
-
-    const container = useRef(null);
-
-    useEffect(() => {
-        Lottie.loadAnimation({
-            container,
-            render: "svg",
-            loop: true,
-            autoplay: true,
-            animationData: require(loty),
-        })
-    }, [])
 
   // React state to control Modal visibility
   const [showModal, setShowModal] = useState(false);
@@ -33,41 +24,59 @@ export default function App() {
 
   return (
     <div className="modal-example">
-      <div>
-        <button className="container" ref={container} type="button" onClick={() => setShowModal(true)}>
-            Open Modal
-        </button>
+      <div className="button">
+        <Lottie className="lottie" animationData={loty} type="button" onClick={() => setShowModal(true)}/>
       </div>
-      <p>Click to get the open the Modal</p>
 
-      <Modal
-        className="modal"
-        show={showModal}
-        onHide={handleClose}
-        renderBackdrop={renderBackdrop}
-      >
+      <Modal className="modal" show={showModal} onHide={handleClose} renderBackdrop={renderBackdrop}>
+
         <div>
           <div className="modal-header">
-            <div className="modal-title">Modal Heading</div>
+            <h1 className="modal-title">Add Movies</h1>
             <div>
               <span className="close-button" onClick={handleClose}>
-                x
+                <RxCross2/>
               </span>
             </div>
           </div>
+
           <div className="modal-desc">
-            <p>Modal body contains text.</p>
+
+            <div>
+                <p className="addp">Image*</p>
+                <button className="addimg">
+                    <IoImagesOutline/>
+                </button>
+            </div>
+
+            <div>
+                <p classclassName="addp">Title*</p>
+                <input className="addinput" placeholder="She Hulk..."/>
+            </div>
+
+            <div>
+                <p classclassName="addp">Description*</p>
+                <input className="addinput" placeholder="Write a short description..."/>
+            </div>
+
+            <div>
+                <p classclassName="addp">Rating*</p>
+                <input className="addinput" placeholder="Your personal rating..."/>
+            </div>
           </div>
+
           <div className="modal-footer">
             <button className="secondary-button" onClick={handleClose}>
-              Close
+              Exit
             </button>
             <button className="primary-button" onClick={handleSuccess}>
-              Save Changes
+              Add
             </button>
           </div>
         </div>
+
       </Modal>
+
     </div>
   );
 }
