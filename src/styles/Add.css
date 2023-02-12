@@ -1,4 +1,9 @@
 
+:root{
+  --grey: #6c757d;
+  --blue: #007bff;
+}
+
 .modal {
     font-family: "Poppins";
     font-size: smaller;
@@ -30,7 +35,7 @@
     font-weight: bolder;
     font-size: 20px;
     margin: 0;
-    color: #007bff;
+    color: var(--blue);
   }
   
   .modal-header {
@@ -73,7 +78,7 @@
   .secondary-button {
     flex: 1;
     color: #fff;
-    background-color: #6c757d;
+    background-color: var(--grey);
     border: none;
     padding: 15px;
     padding-left: 20px;
@@ -84,8 +89,8 @@
 
   .primary-button {
     flex: 1;
-    color: #fff;
-    background-color: #007bff;
+    color: white;
+    background-color: var(--blue);
     border: none;
     padding: 15px;
     padding-left: 20px;
@@ -104,8 +109,8 @@
   }
 
   .lottie{
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     position: fixed;
     right: 0;
@@ -131,6 +136,7 @@
     border: 1px solid #007bff65;
     border-radius: 5px;
     cursor: pointer;
+    color: var(--grey);
   }
       
     .addp{
