@@ -9,11 +9,11 @@ function App() {
     <div className="App">
       <Search />
       <Navbar/>
-
     </div>
   )
 }
 
 export default App
+
 
 
