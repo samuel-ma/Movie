@@ -1,7 +1,7 @@
 import "../styles/MovieCard.css"
 import { BsStarFill } from "react-icons/bs";
 
-const MovieCard = ({movie,overview,path,title,vote_average}) => {
+const MovieCard = ({overview,path,title,vote_average}) => {
   return (
       <div className="card">
           <img className="poster" src={path} alt="image" />

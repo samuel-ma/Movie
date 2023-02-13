@@ -16,6 +16,7 @@ export default function App(props2) {
   const [title, setTitle] = useState(null);
   const [overview, setOverview] = useState(null);
   const [vote_average, setVote_average] = useState(null);
+  
   // Backdrop JSX code
   const renderBackdrop = (props) => <div className="backdrop" {...props} />;
   const handleImageChange = (event) => {
