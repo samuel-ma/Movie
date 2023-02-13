@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react'
 import "../styles/MovieList.css"
 import MovieCard from './MovieCard';
 
-const MovieList = () => {
+const MovieList = (props) => {
 
   const [popular, setPopular] = useState([]);
 
@@ -19,11 +19,16 @@ const fetchPopular = async() => {
   }
 
   return (
-    <div className="list">
-        {popular.map((movie) => {
-            return <MovieCard key={movie.id} movie={movie}/>
-        })}
-    </div>
+      <div className="list">
+          {popular.map((movie) => {
+              return <MovieCard key={movie.id} movie={movie} overview={movie.overview} path={"https://image.tmdb.org/t/p/w500"+movie.backdrop_path} vote_average={movie.vote_average} title={movie.title}/>
+          })}
+          {props.newcards.map((movie) => {
+              return <MovieCard key={movie.id} movie={movie} overview={movie.overview} path={movie.path} vote_average={movie.vote_average} title={movie.title}/>
+          })}
+
+      </div>
+
   )
 }
 

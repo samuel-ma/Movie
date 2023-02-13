@@ -18,7 +18,7 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     padding: 20px;
   }
-  
+
   .backdrop {
     position: fixed;
     z-index: 1040;
@@ -29,27 +29,27 @@
     background-color: #000;
     opacity: 0.5;
   }
-  
+
   .modal-title {
     font-weight: bolder;
     font-size: 20px;
     margin: 0;
     color: var(--blue);
   }
-  
+
   .modal-header {
     border-bottom: 1px solid #e9ecef;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .modal-desc,
   .modal-header,
   .modal-footer {
     padding: 10px;
     color: #333;
   }
-  
+
   .close-button {
     font-size: 1.5rem;
     font-weight: 700;
@@ -64,7 +64,7 @@
     cursor: pointer;
     font-size: 1rem;
   }
-  
+
   .modal-footer {
     border-top: 1px solid #e9ecef;
     display: flex;
@@ -73,7 +73,7 @@
     padding-top: 20px;
     margin-top: 10px;
   }
-  
+
   .secondary-button {
     flex: 1;
     color: #fff;
@@ -98,7 +98,7 @@
     cursor: pointer;
 
   }
-  
+
   .modal-example {
     display: flex;
     justify-content: center;
@@ -136,7 +136,11 @@
     cursor: pointer;
     color: var(--grey);
   }
-      
+
     .addp{
         margin: 0;
     }
+  .image-source{
+    width: 365px;
+    max-height: 400px;
+  }

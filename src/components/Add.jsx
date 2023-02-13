@@ -6,21 +6,38 @@ import loty from "../assets/lottie.json"
 import Lottie from "lottie-react";
 import { RxCross2 } from "react-icons/rx";
 import { IoImagesOutline } from "react-icons/io5";
+import { useDispatch } from 'react-redux'
 
-
-export default function App() {
+export default function App(props2) {
 
   // React state to control Modal visibility
   const [showModal, setShowModal] = useState(false);
-
+  const [imageSource, setImageSource] = useState(null);
+  const [title, setTitle] = useState(null);
+  const [overview, setOverview] = useState(null);
+  const [vote_average, setVote_average] = useState(null);
   // Backdrop JSX code
   const renderBackdrop = (props) => <div className="backdrop" {...props} />;
-
-  var handleClose = () => setShowModal(false);
-
-  var handleSuccess = () => {
-    console.log("success");
+  const handleImageChange = (event) => {
+        const file = event.target.files[0];
+        console.log(URL.createObjectURL(file))
+        setImageSource(URL.createObjectURL(file));
   };
+  var handleClose = () => {setShowModal(false);
+  setImageSource(null)}
+
+    var handleSuccess = (props) => {
+        const movie = {
+            title: title,
+            overview: overview,
+            vote_average: vote_average,
+            path: imageSource
+        }
+        console.log(movie)
+        props2.setnewcards(movie)
+
+        handleClose()
+    }
 
   return (
     <div className="modal-example">
@@ -44,24 +61,25 @@ export default function App() {
 
             <div>
                 <p className="addp">Image*</p>
+                <img src={imageSource} className="image-source" />
                 <button className="addimg">
-                    <IoImagesOutline/>
+                    <input type="file" onChange={handleImageChange} />
                 </button>
             </div>
 
             <div>
-                <p classclassName="addp">Title*</p>
-                <input className="addinput" placeholder="She Hulk..."/>
+                <p classclassName="addp">Title* </p>
+                <input className="addinput" placeholder="She Hulk..."onChange={()=>setTitle(event.target.value)}/>
             </div>
 
             <div>
                 <p classclassName="addp">Description*</p>
-                <input className="addinput" placeholder="Write a short description..."/>
+                <input className="addinput" placeholder="Write a short description..." onChange={()=>setOverview(event.target.value)}/>
             </div>
 
             <div>
                 <p classclassName="addp">Rating*</p>
-                <input className="addinput" placeholder="Your personal rating..."/>
+                <input className="addinput" placeholder="Your personal rating..." onChange={()=>setVote_average(event.target.value)}/>
             </div>
           </div>
 
