@@ -137,9 +137,10 @@
     color: var(--grey);
   }
 
-    .addp{
-        margin: 0;
-    }
+  .addp{
+    margin: 0;
+  }
+  
   .image-source{
     width: 365px;
     max-height: 400px;
