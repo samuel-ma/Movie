@@ -1,9 +1,9 @@
 import "../styles/MovieCard.css"
 import { BsStarFill } from "react-icons/bs";
 
-const MovieCard = ({overview,path,title,vote_average}) => {
+const MovieCard = ({overview,path,title,video,vote_average}) => {
   return (
-      <div className="card">
+      <div className="card" onClick={video}>
           <img className="poster" src={path} alt="image" />
           <h1 className="title">{title}</h1>
           <p className="descr">{overview.length < 130 ? overview : `${overview.slice(0, 130)}...`}</p>

@@ -1,11 +1,9 @@
 
-
 import {useState, useEffect} from 'react'
 import "../styles/MovieList.css"
 import MovieCard from './MovieCard';
 
-const MovieList = (props) => {
-
+const MovieList = () => {
   const [popular, setPopular] = useState([]);
 
   useEffect(() => {
@@ -21,14 +19,9 @@ const fetchPopular = async() => {
   return (
       <div className="list">
           {popular.map((movie) => {
-              return <MovieCard key={movie.id} movie={movie} overview={movie.overview} path={"https://image.tmdb.org/t/p/w500"+movie.backdrop_path} vote_average={movie.vote_average} title={movie.title}/>
+              return <MovieCard video={movie.video} key={movie.id} movie={movie} overview={movie.overview} path={"https://image.tmdb.org/t/p/w500"+movie.backdrop_path} vote_average={movie.vote_average} title={movie.title}/>
           })}
-          {props.newcards.map((movie) => {
-              return <MovieCard key={movie.id} movie={movie} overview={movie.overview} path={movie.path} vote_average={movie.vote_average} title={movie.title}/>
-          })}
-
       </div>
-
   )
 }
 
